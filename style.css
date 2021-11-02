@@ -28,7 +28,7 @@ button:hover{
 }
 /*Header*/
 .header{
-    padding: 2.5em 0 0.5em;
+    padding: 2.5em 0 0;
     background-image: url(assets/pizza_background.jpg);
     margin: 0 0 2.0em;
     background-color: darkred;
@@ -130,6 +130,7 @@ section#main{
     display: inline-block;
     position: relative;
     text-align: center;
+    box-shadow: black 0 0 20px;
 }
 section#main h1{
     text-align: center;
@@ -191,6 +192,8 @@ footer{
     width: 100%;
     text-align: center;
     box-shadow: black 0 0 3em;
+    position: relative;
+    border-radius: 20px;
 }
 footer ul#menuFooter{
     list-style-type: none;
