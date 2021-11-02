@@ -9,6 +9,7 @@ body{
     margin: 0 auto;
     max-width: auto;
     padding: 0 3.0em;
+    text-align: center;
 }
 button{
     background-color: darkred;
@@ -36,6 +37,7 @@ button:hover{
     background-repeat: no-repeat;
     background-size: 100%;
     box-shadow: black 0 0 20px;
+    text-align: center;
 }
 .header h1{
     color: white;
@@ -89,8 +91,6 @@ ul#loginBar li a:hover.active{
 }
 /*Nav Bar*/
 .navBar{
-    display: flex;
-    justify-content: center;
     background-color: darkred;
     width: 1000px;
     margin: 5px;
@@ -98,6 +98,10 @@ ul#loginBar li a:hover.active{
     padding-bottom: .1em;
     z-index: 1;
     box-shadow: black 0 0 20px;
+    text-align: center;
+    display: inline-block;
+    position: sticky;
+    top: 0;
 }
 .navBar ul li a{
     color: white;
@@ -116,31 +120,30 @@ ul#loginBar li a:hover.active{
 /*Main Content*/
 section#main{
     width: 75%;
-    float: right;
-    height: fit-content;
+    height: auto;
     color: white;
     margin: 1em;
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkred;
-    margin-right: 5%;
     background-image: linear-gradient(rgb(65, 0, 0), darkred);
     border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
 }
 section#main h1{
     text-align: center;
     margin-right: auto;
 }
 .panel img{
-    height: 200px;
-    width: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     margin-top: 1em;
 }
 .panel {
-    width: 18%;
-    height: fit-content;
+    width: 20%;
     text-align: center;
-    margin: 1em;
     position: relative;
     display: inline-block;
     background-color: rgb(29, 29, 29);
@@ -148,30 +151,30 @@ section#main h1{
     padding-left: 1em;
     box-shadow: black 0 0 20px;
     border-radius: 5px;
-    margin-left: 8.5%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 5%;
-
+    overflow: hidden;
 }
 section#main .panel p{
     text-align: left;
 }
 /*Sidebar*/
 section#sidebar{
-    width: 238px;
-    float: left;
+    width: 15%;
     position: relative;
-    display: block;
+    float: left;
     background-image: linear-gradient(rgb(65, 0, 0), darkred);
-    margin: 0 1em 3.0em 1.5em;
+    margin: 1em;
     padding: 1em 1em 2.0em 1.7em;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: black 0 0 20px;
+    border-radius: 20px;
 }
 
 section#sidebar h1{
     text-align: center;
     color: white;
-    background-color: rgb(61, 0, 0);
     background-size: 10em 2em;
     margin-right: .5em;
 }
@@ -185,11 +188,9 @@ section#sidebar p{
 /*Footer*/
 footer{
     background-image: linear-gradient(rgb(65, 0, 0), darkred);
-    height: 5em;
     width: 100%;
     text-align: center;
     box-shadow: black 0 0 3em;
-    margin-top: 100%;
 }
 footer ul#menuFooter{
     list-style-type: none;
